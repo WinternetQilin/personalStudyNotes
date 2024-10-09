@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/LoginRegister_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister",
+	"CMAKE_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem",
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/LoginRegister_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/down-arrow.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/cai.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/check.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/dream.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/dunkai.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/close-hover.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/style.css",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/uncheck.png",
+		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res/close.png"
+	],
+	"LOCK_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/CMakeFiles/LoginRegister_autogen.dir/AutoRcc_LoginRegister_Res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "LoginRegister_Res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_LoginRegister_Res.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.5.2/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/CMakeFiles/LoginRegister_autogen.dir/AutoRcc_LoginRegister_Res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegister_Res.qrc",
+	"VERBOSITY" : 0
+}

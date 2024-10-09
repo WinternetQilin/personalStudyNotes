@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "audioAndVideo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "audioAndVideo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audioAndVideo-Debug-dcd065df5c4c35a3bc24.json",
+					"name" : "audioAndVideo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audioAndVideo_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audioAndVideo_autogen-Debug-37daeaf9cdbd63e9ad61.json",
+					"name" : "audioAndVideo_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audioAndVideo_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audioAndVideo_autogen_timestamp_deps-Debug-c9eb61cb08876d8fd91d.json",
+					"name" : "audioAndVideo_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug",
+		"source" : "C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

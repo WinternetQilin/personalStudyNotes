@@ -1,0 +1,1263 @@
+切换这个目录再ls找到共享文件夹 ShareFolder
+cd /mnt/hgfs/
+
+如果重启之后共享文件夹不见了就执行这条指令：
+mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
+
+命令
+pwd	显示当前工作目录的绝对路径
+mkdir	创建空目录
+rmdir	删除空目录
+rm	删除文件
+rm -r	删除非空目录
+echo	输出到控制台
+	echo > 1.txt		重定向覆盖输出到1.txt(原内容没了，文件不存在就创建文件
+	echo >> 1.txt		重定向追加输出到1.txt（原内容还在
+cat	显示文件内容
+	cat 1.txt	显示1.txt中的内容到控制台
+cp	拷贝文件
+cp -r	拷贝文件夹
+mv 1.txt A	移动1.txt到A文件夹中
+mv 1.txt 2.txt	将1.txt重命名为2.txt
+chmod	改文件权限
+	
+创建文件：
+1.命令行创建
+touch 1.txt
+2.软件创建
+vi 1.txt	命令行界面
+gedit 1.txt	图形化界面，推荐🦸
+
+编译器：GNU
+	gcc	c语言的编译器
+	g++	c++的编译器
+gcc *.c		默认编译链接生成a.out
+g++ *.cpp	默认编译链接生成a.out
+./a.out		执行可执行程序文件a.out
+
+ctrl+c	强制结束当前终端进程
+
+makefile	专门用来编译的工具
+目标：依赖
+	使用依赖生成目标的命令
+	
+	make 执行makefile里的命令
+	make clean 执行makefile里的clean命令
+
+如何调试：
+gcc -g 1.c	//一定要-g
+gdb a.out 	//进入调试
+list 		//检查代码(按回车继续)
+break 50	//在第50行打断点
+run			//运行，开始调试
+next		//一行一行往下走，不进入函数
+step		//一行一行往下走，进入函数
+continue	//运行到下一个断点处
+finish		//跳出函数
+return		//跳出函数
+quit		//退出
+
+man：帮助文档
+man 1 命令
+man 2 系统库
+man 3 标准库
+	
+day04 文件：
+linux文件
+	用文件描述符号 绑定一个文件
+文件描述符号： File Describe 简称 fd 本质是个整数
+操作系统内核会维护这个整数，把它和硬盘中的一个文件联系在一起，互为映射
+
+标准fd
+	0	标准输入		stdin
+	1	标准输出		stdout
+	2	标准错误输出	stderror
+都是终端设备
+
+lseek 挪文件内容指针
+	SEEK_SET	文件头
+	SEEK_END	文件尾
+	SEEK_CUR	当前位置
+
+day05 目录：文件夹
+打开目录文件	opendir
+找目录下的文件	readdir
+关闭目录文件	closedir
+
+opendir 和 readdir 会自动维护当前读到了目录下哪个文件
+	就像open函数打开文件，文件内容指针在文件头，read函数读一段，文件内容指针自动往后挪一段
+每个目录下都有两个默认的文件：
+.	当前目录
+..	当前目录的上层目录
+
+文件映射虚拟内存
+	文件读写耗时，io操作也比较耗时
+	所以直接内存操作，耗时很短
+文件映射虚拟内存编程模型：
+	1.创建或打开文件
+	2.注意文件大小（写入时要调整文件大小，读时不用管）
+	3.把文件映射成虚拟内存
+	4.以 内存操作 方式 操作文件
+	5.解除映射
+	6.关闭文件
+
+mmap:
+#include <sys/mman.h>
+void *mmap(
+	void *addr, 		//目的映射地址，填NULL则由操作系统指定
+	size_t length, 		//映射长度
+	int prot, 			//权限（保护方式）
+	int flags,			//映射方式
+    int fd, 			//打开的文件描述符号
+	off_t offset		//文件中映射偏移量（如：从文件第100个字节位置开始映射）填0表示从文件头开始
+	);
+MAP_SHARED   MAP_PRIVATE
+权限（保护方式） 
+	PROT_EXEC  Pages may be executed.
+
+    PROT_READ  Pages may be read.
+
+    PROT_WRITE Pages may be written.
+
+    PROT_NONE  Pages may not be accessed.
+映射方式
+	MAP_SHARED
+
+	MAP_PRIVATE
+
+
+int munmap(void *addr, size_t length);
+
+day06 进程：
+	1.进程的定义：
+		运行中的程序
+		操作系统资源调度的基本单位
+		资源	CPU时间片
+				文件描述符号 fd
+				内存、设备 等等...
+
+	2.进程的组成：
+		数据：全局、静态、只读变量（类比内存四区）
+		代码：进程相关的源代码，存在于全局变量区
+		堆栈：进程绑定的堆空间和栈空间
+		优先级、时钟、进程id 等等...
+
+		linux系统下每个进程在/proc目录下有进程id及其对应的目录存储进程的一些数据
+
+	3.进程模式
+		用户模式：应用程序运行模式
+		内核模式：应用程序调用系统调用，触发系统中断切换到内核模式，内核模式完毕切换会用户模式
+
+	4.进程状态
+		运行时状态、睡眠状态、挂起状态、等待状态、死亡状态、僵尸状态、等等...
+		用ps -aue、top、tree等命令可以查看进程状态
+
+	5.创建进程
+		1）手动运行
+			命令、双击执行、system函数（程序中执行命令）
+		2）调度进程
+			nice、renice 	控制进程是否让步
+			kill			结束进程
+			crontab			安装进程
+		3）fork vfork 创建子进程
+			#include<sys/types.h>
+			#include<unistd.h>
+
+			pid_t fork(void);
+
+		4）exec簇
+
+	6.父子进程
+		getpid		获取当前进程的id
+		getppid		获取当前进程的父进程（parent）id
+		创建进程的进程		父进程
+		被创建的进程		子进程
+
+		clone 克隆
+		子进程复制父进程的代码，会拷贝进程上下文(当前的运行状态，运行到什么时候了，到哪行了)
+		所以子进程也有fork函数，且子进程一开始就会执行fork函数
+		父进程执行fork后，父子进程同时运行
+		父进程的fork返回子进程id，子进程fork返回0
+		所以可以根据fork返回值区分父子进程代码
+
+	7.进程的结束
+		1）程序执行完毕自然结束（main函数的return）
+		2）程序自己结束自己（exit函数）
+		3）父进程结束不会自动结束其子进程
+			但是结束终端会结束终端上的子进程
+		4）其他进程可以结束进程（kill命令）
+			kill -9 [进程id]
+
+	8.僵尸进程
+		父进程先于子进程结束，子进程结束的时候它的一些资源未释放
+		持续占用系统资源，直到系统重启才会释放
+		要注意避免僵尸进程的产生（类比手动内存分配要注意内存泄漏）
+			最简单避免防止：父进程 晚于 子进程结束
+				子进程结束前会向父进程发送SIGCHILD信号，父进程可以使用wait函数等待这个信号
+				 	#include <sys/types.h>
+       				#include <sys/wait.h>
+
+       				pid_t wait(int *status);
+
+       				pid_t waitpid(pid_t pid, int *status, int options);
+
+       				int waitid(idtype_t idtype, id_t id, siginfo_t *infop, int options);
+
+	9.进程的组织形式
+		进程
+		进程组：多个 进程 组成，进程组的组长（session进程）
+		会话：多个 进程组 组成
+
+	10.守护进程
+		用来 观察、记录的
+		特征：
+			能持续运行，不能被其他进程轻易干掉
+			属于后台进程，不会被看到
+		一般用来用作记录日志文档
+
+		守护进程编程模型：
+			第一种：
+				1）创建新会话			setsid
+				2）改变当前工作目录		chdir
+				3）重设当前文件权限		umask
+				4）关闭文件				close
+			第二种：
+				1）重设当前文件权限		umask
+				2）创建子进程			fork
+				3）让父进程结束			
+				4）创建新会话			setsid
+				5）忽略一些信号			主要忽略SIGCHLD、SIGHUP
+				6）改变当前工作目录		chdir
+				7）重定向文件描述符号	dup2	为了屏蔽终端干扰
+
+进程间通信：
+	广义：进程间数据交换（传输）
+	借助:
+		文件
+		文件映射虚拟内存（可以在父子进程之间进行通信）
+		管道
+		信号
+	狭义：IPC
+	借助：
+		共享内存
+		消息队列
+		旗语（信号量）
+		
+	父子进程间通信：
+		变量：父子进程都拥有同名变量，但是不共用
+		堆内存：父子进程都有堆内存，但是不共用
+		mmap：父子进程共享同一个mmap映射出来的内存
+		
+day07 管道（FIFO）：First In First Out
+	本质是个文件
+	管道中的数据都是字符串
+	单向数据传输（单工）
+	分三种：
+		1.命令中的管道
+			只有在命令中才能使用
+			用 | 把左边的命令的结果 交给 右边的命令
+			curl 命令：
+				把网页源码打印到终端
+				curl -s www.baidu.com | more
+		
+		2.匿名管道
+			能且只能在父子进程之间使用
+			pipe函数
+			int pipe(int pipefd[2]);
+			pipefd[0]只能读
+			pipefd[1]只能写
+			匿名管道编程模型：
+				1）准备仅有两个元素的描述符号数组
+				2）把数组变成管道
+				3）创建子进程
+				4）使用管道
+				5）关闭管道
+
+		3.有名管道
+			只能在同一主机的进程之间传输数据
+			创建管道文件
+			编程模型：
+				1）创建管道文件（可以是第三个进程） mkfifo
+					#include <sys/types.h>
+       				#include <sys/stat.h>
+       				int mkfifo(const char *pathname, mode_t mode);
+				2）两线程分别打开管道文件（注意文件打开方式，一读一写） open
+				3）数据传输	write/read
+				4）关闭管道 close
+				5）删除管道文件	unlink
+			注意：
+				共享文件夹不能创建管道文件
+				要阻塞式等待两边同时打开
+					一边打开了要等另一边也打开才会解除阻塞
+				先关闭 读 端会导致 写 端进程结束
+				先关闭 写 端不会导致 读 端进程结束
+				删除管道文件会导致 写 端进程结束
+
+	传文件：
+		1.传文件名
+		2.传文件大小
+		3.循环传文件内容
+		4.判断是否传完
+		5.传完则关闭
+
+day08 IPC：Inter Process Communicate
+	  中间	 进程	   通信
+	根据操作系统（os）不同会有不同的两个版本：ANSI版本 和 POSIX版本
+
+	共享内存：shm share memory
+		多个进程都可以访问os之上的一块内存段
+	消息队列：msg message queue
+		在主机上指定一个或多个队列
+		不同进程可以发送消息到队列中，或者从队列中获取消息
+		按照对应类型拿
+	旗语（信号量）：sem semaphore
+		多个进程不可能同时访问一块区域
+		用一个整数 进程都能对它做加减操作
+		加 随便加
+		减 最小减到0（阻塞）
+
+	以上三种都要使用到key
+		key的本质是一个int类型的整数，保证IPC的唯一性
+		key都是通过fd创建
+	用来查看当前主机的IPC的命令：ipcs
+
+	共享内存编程模型：
+		1.创建key		ftok
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	key_t ftok(const char *pathname, int proj_id);
+			proj_id 非零整数 8个bit位 1-255
+
+		2.创建共享内存	shmget
+		#include <sys/ipc.h>
+    	#include <sys/shm.h>
+    	int shmget(key_t key, size_t size, int shmflg);
+
+		3.挂载共享内存	shmat
+		#include <sys/types.h>
+    	#include <sys/shm.h>
+    	void *shmat(int shmid, const void *shmaddr, int shmflg);
+    	int shmdt(const void *shmaddr);
+
+		4.使用
+		5.卸载共享内存	shmdt
+		6.删除共享内存	shmctl
+		#include <sys/ipc.h>
+    	#include <sys/shm.h>
+    	int shmctl(int shmid, int cmd, struct shmid_ds *buf);
+
+		shmA								shmB
+	1.创建key		ftok				1.创建key		ftok
+	2.创建共享内存	shmget				 2.获取共享内存
+	3.挂载共享内存	shmat				 3.挂载
+	4.使用								4.使用
+	5.卸载共享内存	shmdt				 5.卸载
+	6.删除共享内存	shmctl
+
+	信号（因为需要所以这里简单讲点）：
+		信号是个整数，os提供了64个信号（主要是前32个）
+		特殊行为用对应的信号来表示
+			终端强制结束一个进程 SIGINT 2
+			杀进程	SIGKILL	9
+			...
+		本身信号的处理是固定的，不同信号有不同的处理方式
+		我们可以使用signal函数，自己注册信号的处理
+
+	 #include <signal.h>
+	 typedef void (*sighandler_t)(int);
+	 sighandler_t signal(int signum, sighandler_t handler);
+	
+	消息队列编程模型：
+		1.创建key
+		2.创建消息队列
+			msgget
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	#include <sys/msg.h>
+    	int msgget(key_t key, int msgflg);
+
+		3.收发消息
+			msgrcv 接收
+			msgsnd 发送
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	#include <sys/msg.h>
+		int msgsnd(int msqid, const void *msgp, size_t msgsz, int msgflg);
+    	ssize_t msgrcv(int msqid, void *msgp, size_t msgsz, long msgtyp,int msgflg);
+		注意：接收消息会按照类型接收（msgtyp）
+
+		4.删除消息队列
+			msgctl
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	#include <sys/msg.h>
+    	int msgctl(int msqid, int cmd, struct msqid_ds *buf);
+	
+	旗语（信号量）编程模型：
+		1.创建key		ftok
+		2.创建信号量	semget
+		#include <sys/types.h>
+       	#include <sys/ipc.h>
+       	#include <sys/sem.h>
+       	int semget(key_t key, int nsems, int semflg);
+		
+		3.初始化信号量	semctl
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	#include <sys/sem.h>
+    	int semctl(int semid, int semnum, int cmd, ...);
+
+		4.使用信号量	semop
+		#include <sys/types.h>
+    	#include <sys/ipc.h>
+    	#include <sys/sem.h>
+    	int semop(int semid, struct sembuf *sops, size_t nsops);
+
+		5.删除信号量	semctl
+
+day09 信号：
+	用户模式下用来模拟硬件中断的一种方式
+	中断是异常（有变化也算）的一种
+	硬件中断：
+		硬件引发的中断，物理层面的，例如上电、鼠标移动、电平的变化
+	软件中断：
+		模拟硬件中断
+	信号的产生：
+		硬件、内核、进程
+	结束当前终端进程的信号：
+		ctrl + c 	SIGINT
+		ctrl + \	SIGQUIT
+	信号处理过程：
+		进程A正常运行		硬件、内核、进程或其他进程发送一个信号给A
+		进程A收到信号
+			操作1：直接做信号本身规定的对应的处理
+			操作2：调用注册好的信号处理函数
+			操作3：屏蔽信号
+		继续执行
+	信号分类：
+		Linux提供64个信号（通过 kill -l 查看）
+			不可靠信号（非实时的）	unix提供的	1-31
+			可靠信号（实时的）		后来扩充的	34-64
+		标准信号：操作系统提供的
+		自定义信号：用户自定义的 SIG_USR+
+	man 7 signal 查看signal信息
+		SIGWITCH	终端大小发生改变
+		SIGALRM		定时器信号
+		有些信号可以注册处理代替默认的处理，有些不行，例如SIGKILL（9）
+	信号发送：
+		kill 命令
+		kill 函数（man 2 kill）
+		raise 函数，向当前进程发送信号（man raise）
+		sigqueue 高级的信号发送(man sigqueue)
+			要配合高级的信号注册函数来使用sigaction（man sigaction）
+	信号屏蔽（man sigprocmask）：
+		#include <signal.h>
+    	int sigprocmask(
+			int how, 
+				SIG_BLOCK 设置屏蔽
+				SIG_UNBLOCK 解除屏蔽
+
+			const sigset_t *set, 
+				（man sigaddset）
+				int sigemptyset(sigset_t *set);//清空
+       			int sigfillset(sigset_t *set);//填充
+       			int sigaddset(sigset_t *set, int signum);//添加信号到信号集
+       			int sigdelset(sigset_t *set, int signum);//从信号集删除某个信号
+       			int sigismember(const sigset_t *set, int signum);//判断某个信号是否在信号集里
+
+			sigset_t *oldset
+			);
+
+网络编程：
+	socketFd:是一个描述符号，表示进程中的网络设备
+		分两种：
+			1.socket函数创建，创建的socketFd接口对应服务器端的网络设备，用来接受客户端连接
+			2.accept函数返回值，创建的socketFd接口对应客户端（一个socket对应一个客户端）
+				对socketFd进行读，从客户端接收数据
+						写，发送数据到客户端
+
+		tcp客户端则是只有socket函数创建的socketFd，对应服务器（注意与上面两种进行区分）
+			对socketFd进行读，从服务器接收数据
+						写，发送数据到服务器
+
+	协议地址簇：用于区分主机、进程
+		三个成员：
+			family	通信协议
+			addr	ip地址	区分主机
+			端口号	区分进程
+	绑定：把 socketfd 和 地址协议簇 绑到一起
+	监听：绑定后准备好accept
+	accept：形成稳定的数据传输通道
+		阻塞式等待和有名管道类似
+	tcp编程模型
+			服务器								客户端
+		1.创建socket						1.创建socket（socket）
+		2.确定服务器协议地址簇				 2.获取服务器地址簇（struct sockaddr）
+		3.绑定（bind）
+		4.监听（listen）
+		5.接受客户端连接（accept）			 3.连接服务器（connect）
+		6.通信								4.通信
+				收（recv）发（send）都可以
+		7.断开连接							5.断开连接（close）
+
+	UDP:无连接
+	编程模型：
+				server						client
+			1.创建socket				1.创建socket
+					socket	第二个参数变为SOCK_DGRAM
+			2.协议地址簇				2.协议地址簇
+			3.绑定
+			4.通信						3.通信
+				通常使用recvfrom、sendto
+				recvfrom == recv + accep	除了接收数据外，还可获取对方协议地址簇
+				sendto == send + connect	除了发送数据外，还可以连接到对方（精准发送）
+			5.close						4.close
+			
+	tcp聊天室：
+		1.服务器要能接受多个客户端连接
+			如果按照之前的tcp测试代码，可以发现s可以连接c1，当c2打开时提示连接服务器成功，但是s收不到c2发来的信息
+				原因：server只accept了一次，所以只有c1对应的fd被保存了下来
+				如果先循环多次接收多个客户端连接
+					那么就会卡在连接状态，到不了通信循环
+					解决思路：
+						1）父子进程
+							行不通，因为子进程只是拷贝父进程代码和进程上下文，父子进程socket函数的返回值是不同的两个
+						2）多进程
+							弊端：多进程开销相对很大
+						3) 多线程
+							可行，但有弊端：第四步搞不定，且做不到高并发
+						
+		2.服务器能收到客户端发送的消息
+			因为scanf会阻塞，所以用select实现同时接受连接和通信
+		3.服务器能转发给所有客户端新消息(业务)
+			与2同理
+		4.服务器能知道客户端断开了连接
+
+	day11 select：io多路复用-让输入/输出设备能多次使用（复用），现在因为有 阻塞（accept、recv函数造成） 所以不能多次使用
+		select（适用于数量级小，轮询方式实现）-man select
+			是阻塞的
+		poll（很少用）
+		epoll（适用于数量级很大，事件（通知）方式实现）
+
+		io操作（accept、recv）前，先判断是否有动静（有数据可读、可写）
+			若有，再执行io操作，没有则不执行
+
+		io多路复用监视的是文件描述符号
+		fd_set 文件描述集合，类似数组
+		#include <sys/select.h>
+       	int select(
+					int nfds,					//文件描述符号限制，一般是最大描述符号+1
+	   				fd_set *readfds, 			//输入描述符号集合
+					fd_set *writefds,			//output fds
+       	     		fd_set *exceptfds, 			//erroroutput fds
+					struct timeval *timeout		//延时
+				);
+		void FD_CLR(int fd, fd_set *set);		//把fd从fds中删除
+    	int  FD_ISSET(int fd, fd_set *set);		//查找描述符号
+    	void FD_SET(int fd, fd_set *set);		//把fd放入fds中
+    	void FD_ZERO(fd_set *set);				//清空描述符号集
+
+		select编程模型：
+			1.创建描述符号集
+			2.放入要监视的描述符号
+			3.监视（阻塞式）
+			4.根据监视返回的值进行对应事件处理
+			5.循环2-4
+
+	day10 tcp:有连接(后面重新整合一下)
+		建立连接：三次握手
+			1.客户端向服务器发送连接请求（报文SYN）
+			2.服务器收到SYN之后向客户端发送收到指令ACK和连接请求SYN
+			3.客户端向服务器发送收到指令ACK
+		断开连接：四次挥手
+			1.客户端向服务器发送断开请求 FIN
+			2.服务器收到客户端发来的FIN后回复收到指令ACK
+			3.服务器检查是否存在没有收发完的数据
+				如果有，先收发完，然后再向客户端发送断开指令/请求 FIN
+			4.客户端收到服务器发来的FIN后，检查是否存在没有收发完的数据
+				如果有，先收发完，然后回复ACK
+		服务器主动断开只需要第3、4步
+		如果因为网络问题双方被动断开，会延迟等待一段时间（期间保持连接时候的状态），之后若再没回复连接就主动断开
+		tcp的11种状态：
+			CLOSED		初始状态	服务器准备建立连接前和断开连接后
+			LISTEN		监听状态	服务器绑定监听后的状态
+			SYN_RCVD	服务器接收SYN之后，发送ACK之前
+			SYN_SENT	客户端发送SYN后，接收SYN和ACK之前
+
+			ESTABLISHED	连接状态	服务器和客户端都有的一个状态，建立稳定的数据传输通道时的状态
+
+			FIN_WAIT1	服务器收到FIN之后，发送ACK之前
+			FIN_WAIT2	服务器发送FIN之后，接受ACK之前
+			CLOSE_WAIT	客户端接收FIN之后，发送ACK之前
+			LAST_ACK	客户端接收ACK之后
+			CLOSEING	双方同时发送FIN，等待接收ACK
+
+			TIME_WAIT	等待延迟
+
+	day12 poll:和select差不多(man poll)
+		#include <poll.h>
+    	int poll(struct pollfd *fds, nfds_t nfds, int timeout);
+		与select共同点：还是轮询（轮询结构体数组）
+		区别1：监视的不是描述符号集合，是结构体数组
+			struct pollfd {
+               int   fd;         /* file descriptor */
+               short events;     /* requested events 需要监视的事件 */
+               short revents;    /* returned events 监视时产生的事件 */
+           };
+		区别2：没有最大描述符号限制
+		区别3：不阻塞
+
+		poll编程模型：
+			1.创建结构体数组
+			2.设置要监视的描述符号
+			3.监视
+			4.根据返回值响应
+
+		select和poll在fd数量300以下时性能非常好
+	day12 epoll：非阻塞,中断机制(man epoll)
+		#include <sys/epoll.h>
+
+		epoll编程模型：
+			1.创建epoll			epoll_create(man epoll_create)
+
+				int epoll_create(int size);
+
+			2.注册fd对应的事件	 epoll_ctl(man epoll_ctl)
+
+				int epoll_ctl(
+								int epfd,					//epoll_create返回值
+								int op, 					//操作
+															//EPOLL_CTL_ADD	增加
+															//EPOLL_CTL_MOD	修改
+															//EPOLL_CTL_DEL	删除
+								int fd, 					//文件描述符号
+								struct epoll_event *event	//epoll事件
+															//EPOLLIN
+															//EPOLLOUT
+															//EPOLLERR
+									//epoll要给每个监视的描述符号都注册对应的事件（和信号处理类似）
+									//如果有事件发生，就中断
+							);
+
+			3.等待				epoll_wait(man epoll_wait)
+
+				 int epoll_wait(int epfd, 
+				 				struct epoll_event *events,
+				 				int maxevents, 
+								int timeout
+								);
+
+			4.检查和事件响应	if(&)
+
+day13 线程：
+	1.概念：
+		线程是一个函数，是os调度的基本单位
+		Linux内核在2.2版本之前，是没有线程的概念，只有有限个进程（4096）
+				在2.4版本中，有了线程的概念，而且可以有无数个
+		主线程一般默认main函数
+		分支线程一般是被创建的线程
+		一个进程中至少有一个线程，同一进程中的线程共享进程的所有资源（全局变量）
+		多个线程可以用一个线程函数，函数中的局部变量是每个线程独有的（不共用）
+
+	2.如何创建并启用线程
+		#include <pthread.h>
+
+		pthread_create	创建线程（man pthread_create）
+    	int pthread_create(
+							pthread_t *thread, 					//线程id，作为返回参数
+							const pthread_attr_t *attr,			//线程属性
+                          	void *(*start_routine) (void *), 	//线程函数
+							void *arg							//线程函数参数
+							);
+		 Compile and link with -pthread.	
+		 //程序中使用了这个函数，生成时要链接库 gcc *.c -l pthread 
+
+		 线程传参
+		 	参数为void* 注意类型转换即可
+
+		线程结束：
+			自然结束
+				线程函数结束
+			主线程结束
+				主线程结束时会结束掉分支线程
+			用pthread_exit
+				与exit函数类似
+		 	其他线程发送信号给线程
+		 		pthread_kill
+
+		 	其他线程结束线程
+		 		pthread_cancel
+
+		 	获取线程返回值
+		 		pthread_join 阻塞函数，直到获取的线程结束，这个函数才返回，一般是用它等待某线程结束
+	
+	3.临界数据
+		多个线程同时运行，都可以访问到的数据叫做临界数据
+		多个线程同时访问临界数据后，导致临界数据脏（结果不对）
+
+	4.线程同步
+		通过各种方式让并发执行的线程不同时访问同一块区域
+			原子锁	atomic_add（老版本的有，现在不支持了）特性：不可分割
+
+			自旋锁	pthread_spinlock_init
+				一直在循环等待
+				互斥锁建立锁消耗多，当线程阻塞的时候不会一直循环，处于阻塞情况下不消耗资源
+				自旋锁建立锁消耗资源少，当线程阻塞的时候一直循环检查锁是否可用，处于阻塞情况下消耗资源
+				互斥锁适用于阻塞时间长的情况
+				自旋锁适用于阻塞时间短的情况
+				pthread_spinlock_t
+				pthread_spinlock_init
+				pthread_spinlock_lock
+				pthread_spinlock_unlock
+				pthread_spinlock_destory
+				也可以和条件变量联用让线程相对均匀分配
+			信号量（旗语）
+
+			读写锁	pthread_rwlock_init
+				有两把锁，一把 读 锁，一把 写 锁，读写、写写相斥，读读相容
+				pthread_rwlock_t		创建
+				pthread_rwlock_init		初始化
+				pthread_rwlock_wrlock	加写锁
+				pthread_rwlock_rdlock	加读锁
+				pthread_rwlock_unlock	解锁
+				pthread_rwlock_destory	销毁
+
+
+			互斥量	pthread_mutex_init
+				相互排斥，某个线程加了锁，其他线程在解锁前都阻塞
+				可能某个线程很久都抢不到加锁权（不能均匀分配cpu时间片）
+				如果希望多个线程相对公平，就要和条件变量一起使用
+
+			条件变量	pthread_cond_init
+				pthread_cond_t 			创建
+				pthread_cond_init 		初始化
+				pthread_cond_wait 		等待信号（阻塞式）
+				pthread_cond_signal 	向某个线程发送信号
+				pthread_cond_bordcast 	向所有线程发送信号
+				pthread_cond_destroy 	销毁信号
+
+		通用编程模型：
+			1.创建锁/变量
+			2.初始化
+			3.使用
+				加锁
+				解锁
+			4.销毁锁
+		死锁：线程卡死
+			死锁产生必须要满足的四点：
+				1）请求且保持
+				2）不可撤销
+				3）不可摧毁
+				4）循环请求
+		粒度：一把锁锁住的范围
+			粒度小 锁越多 越灵活 消耗的资源越多
+			粒度大 锁越少 越不灵活 消耗的资源越少
+
+day14 aio：异步io，让io过程异步进行，从而提升读写效率
+	涉及状态切换：用户态、内核态
+	假如进行读操作：
+	执行异步操作的时候，函数直接返回（可以先去做其他事情）
+	同时调用内核中对应的系统函数
+	内核中函数执行对应io功能，执行完毕之后把数据放到执行的缓冲区中
+	之后用户态可以去检查缓冲区是否有数据
+	或者用信号方式获取数据
+
+	aio编程模型：Include: <aio.h>.		Link with -lrt.
+		1.准备缓冲区
+			struct aiocb {
+                  int             aio_fildes;    /* File descriptor */
+                  off_t           aio_offset;    /* File offset */
+                  volatile void  *aio_buf;       /* Location of buffer */
+                  size_t          aio_nbytes;    /* Length of transfer */
+                  int             aio_reqprio;   /* Request priority offset */
+                  struct sigevent aio_sigevent;  /* Signal number and value */
+                  int             aio_lio_opcode;/* Operation to be performed */
+              };
+
+		2.异步操作
+			 int aio_write(struct aiocb *aiocbp);
+			 int aio_read(struct aiocb *aiocbp);
+		3.检查是否操作完毕
+			aio_error	用轮询的方式不断检查操作是否完毕
+			aio_suspend	阻塞式等待某个io操作完成，但是只要有一个操作完成了它就会返回
+			lio_listio	阻塞式等待，第一个参数设置为LIO_WAIT，可以等所有操作都完成再返回
+						中断机制，事件机制：第一个参数设置为LIO_NOWIAT
+		4.得到数据
+			aio_return
+		5.收尾
+	
+	io多路复用和aio的区别：
+		io多路复用没有状态切换，aio有，要切换到内核态
+
+day15 ICMP协议：Internet Control Message Protocol
+				  网络	  控制	   报文		协议
+	作用：用来检测网络是否畅通
+
+	ping 命令实现流程：
+		1.创建socket
+			TCP:SOCK_STREAM
+			UDP:SOCK_DGRAM
+			ICMP:SOCK_RAW SOCK_PACKET
+			icmp协议只有root用户可以创建
+
+		2.设置套字节
+			setsockopt
+
+		3.设置接收ip
+
+		4.打包
+			准备好要发送的数据包
+
+		5.发包
+
+		6.收包
+
+		7.解包
+			解析
+
+		8.统计并输出
+
+day16 线程池：池化技术之一
+		面向对象思想：封装
+		一个程序要用到许多线程，线程池是管理线程的一种方式
+		一般说三线程两池：
+			任务线程：生成任务对象并把任务对象添加到 任务池
+			管理线程：从任务池中取出任务对象，交给 线程池 中的某个线程处理
+			监督线程：监督线程池中的线程，如果空闲线程数量过少就增加一些，过多就减少一些
+
+		简易线程池：
+			任务池对象
+			线程池对象
+
+			创建并初始化线程池
+			线程函数：包含监督线程的功能
+			添加任务到线程池中：任务线程的功能
+			工作函数
+			销毁函数
+
+day17 http协议：基于tcp的超文本传输协议
+	http编程模型（B/S）：
+		1.建立tcp连接
+			1.1 创建socket
+			1.2 设置socket
+			1.3 绑定
+			1.4 监听
+		2.等待客户端连接服务器	accept
+		3.接收客户端发来的请求并解析
+		4.制作响应
+		5.响应发送客户端
+	
+	http特性：
+		1.支持C/S、B/S模式
+		2.简单且快速
+		3.灵活：可以传输任意类型数据
+		4.可以无连接：每次tcp处理一个（1.1版本）或多个（2.0版本以上）请求
+		5.无状态：协议对业务的处理没有记忆能力
+	优点：快速、简单、方便、效率高
+	缺点：明文传输数据，不是很可靠、不是很稳定
+
+day18 ssl协议：用于安全传输（加密）
+	加密解密技术分为三类：
+		对称加密：异或^，通过密钥进行加密和解密
+			数据：56	0011	1000
+			密钥：66	0100	0010
+			加密后（56^66）：	0111	1010
+			常用的加密算法：
+				DES：56位密钥
+				AES：更高级的加密标准（128、129、256位三种长度密钥）
+				blowfish：56位密钥
+			优点：速度快
+			缺点：安全性堪忧（密钥传输问题）
+
+		非对称加密：有两个密钥
+			公钥：所有用户都拥有
+			私钥：单个用户私人持有
+			一般公钥加密，私钥解密（公钥解密会有点问题）
+			某用户的公钥加密，只能用该用户的私钥解密
+			RSA：可以加密解密，也可以做认证
+			DSA：只能加密解密
+			长度：512、1024、2048、4096
+			优点：安全性高
+			缺点：速度慢（解密耗时是对称加密的千倍以上）
+
+		单向加密：不可还原，不同数据加密后结果不一样，一般只用来做认证
+			可以把任意数据加密成一个固定长度的字符串
+			MD5		固定长度	128位
+			SHA1	固定长度	160位
+	组合加密：
+		发送端（S）加密后发送：
+			发送端加密后发送:
+				A是发送端要发送给接收端的数据
+			1.把A用事先双方约定好的单向加密算法加密得到B
+				B是A单向加密后的特征码
+			2.把C(A+B)用双方约定好的对称加密算法来进行加密
+				C就是A和B
+				D是对称加密算法过程中用到的秘钥
+				E是c对称加密后得到的结果
+			3.把E用接收端的公钥加密得到最终要发送的数据F
+				F是D用R的公钥加密后的结果
+			4.把F和E发送给接收端
+
+		接收端（R）接收后解密：
+			0.接收到F和E
+			1.把F用接收端私钥解密得到D
+			2.把E用D来解密得到C
+			3.把A用事先双方约定好的单向加密算法加密得到x
+			4.检查X是不是就是B如果是 验证通过
+
+		用非对称加密 来 加密 对称加密 过程中要用到的秘钥
+		保证安全的同时不增加很大的计算开销(因为秘钥一般数据量少)
+		数据只用对称加密，密钥用非对称加密，兼顾安全和效率
+		用单向加密来验证发送方身份，非对称加密来验证接收方身份
+	
+	中心化网络：要有一个中心（第三方）来发放公钥私钥
+		一般是大型企业或政府负责发放证书
+	去中心化网络：所有人都知道这个数据，一般用在金融领域
+
+	使用ssl协议一般用openssl库
+
+
+
+day19 https协议：http + ssl（tsl）
+	1.网址解析	通常用CGI
+	2.web服务器常用的事件处理模式（/架构/框架）
+		1）Reactor
+			用多线程方式实现并发，用线程池管理（但也不一定是多线程，核心是事件驱动）
+		2）Proactor
+			用异步io方式实现并发
+		3）ACT（Asynchronous Completion Trigger）
+			状态的保持和传递
+			应用程序有第三方服务调用的需求
+			发送第三方请求时带一个token，接收的时候有个token
+		4）Accept-Connector
+			像多个reactor在一起的模型
+			把连接和初始化分开处理，让 系统 中 连接 的建立和 服务 在初始化完成之后不相干
+			有个连接器专门用来建立连接和断开连接
+			有个处理器专门进行业务处理
+	
+day20 PPPOE协议：
+	Point-to-Point Protocol over Ethernet
+		点对点
+	PPP Over Ethernet
+	PPP在以太网上传输，以前最常见的拨号上网用的就是这个
+	PPP通常在串行链路上使用
+	串行：一对一
+	以太网：广播型-多对多
+	PPPoE产生并一直在使用的重要原因 是 因为PPP协议的身份验证相对安全
+	中国电信的ASDL的核心技术就是PPPoE协议
+	PPPoE的组成;
+		发现阶段	Discovery	给会话阶段做准备（找到可用服务器，获取会话id）
+			客户端 发现 服务器
+				PADI	Initiation	客户端广播请求，在整个网络中找符合要求的服务器
+				PADO	Offer	服务器响应，将自己的一些信息发送给客户端
+				PADR	Request	客户端向服务器请求会话号
+				PADS	Session-Conformation	服务器把分配好的会话号发送给客户端
+				PADT	Terminal	客户端中断发现过程（断连）
+		会话阶段	Session
+			LCP协商
+				Link Control Protocol	链路控制协议
+				协商链路的参数：
+					最大接收单元MRU
+					Magic Number
+					后续认证的协议
+			认证
+				最常见的是PAP和CHAP协议认证
+				PAP：发送的认证信息是明文，可被抓包获取信息
+				CHAP：发送的认证信息是密文，抓包出来的数据无法解析成正确的信息
+			NCP阶段-IPCP协商
+				进行 IP DNS WINS 等协商
+			数据传输
+				IP层的通信
+		
+		TCP/UDP：TCP/UDP头+数据
+		IP：IP头+TCP/UDP头+数据
+		ICMP：MAC头+IP头+TCP/UDP头+数据
+
+	TCP的流量控制和滑动窗口机制：
+	tcp会形成稳定数据传输通道,双向数据传输
+		发送缓冲区	接收缓冲区
+	如果发送速度远远超出接收端处理能力，可能会出现快速的发送淹没慢速的接收端，导致数据丢失
+	滑动窗口是一种流量控制的方式
+	发送方可以在一定条件下连续发送N个组的数据，而不是接收端确认收到一个组之后再发下一组数据
+	假设窗口大小为M 发送第一组数据后发送第二组第三组
+	直到第1+M组 收到第一组数据的确认后再发送第2+M组
+	如果没有收到第1组数据的确认，则窗口不滑动
+
+	TCP会为每个链接设置一个持续计时器
+	只要TCP的一方收到对方的零窗口通知就会启动该计时器，周期性发送一个零窗口探测报文段
+	对方在确认这个报文时给出当前窗口大小
+	(计时设置为零窗口也必须接收以下几种报文段
+		{零窗口探测报文段,确认报文段，携带紧急数据的报文段})
+
+	如果滑动窗口大小为1,滑动窗口协议和简单的肯定确认协议相同。
+	如果窗口大小增加，效率提升。
+	滑动窗口大小是可以在传输过程中动态调整的。
+	接收方不断将自己的接收窗口大小通知发送方
+	发送方将接收方通知的窗口大小设置为滑动窗口的大小。
+
+	发送方在如下两种情况停止发送数据:
+		1.发送窗口中全是已发送未确认的数据(网络延迟大导致)
+		2.接收方窗口大小为0 (接收方处理速度太慢导致)
+
+day21 串口 uart 一种设备的名字
+	Universal Asynchronous Receiver-Transmitter
+		通用	串行		 收			发
+	简单来说就是个用来传输数据的端口
+	用途：
+		1）看数据
+		2）串口服务器
+		3）物理隔离设备
+	如何使用：
+		1）用软件
+		2）写代码
+		
+day22 linux内核概述
+	linux系统：
+		第一层：应用程序
+		第二层：命令、中断、库
+		第三层：系统调用
+		第四层：内核模块（驱动程序）
+				内存管理、文件系统、进程调度、信号、设备驱动、网络
+		第五层：硬件接口
+		第六层：硬件
+				终端控制、设备控制、虚拟内存、硬盘（分页）、物理内存
+		
+		前两层可以统称为 外壳
+		三至五层可统称为 内核
+		第六层是具体的硬件
+
+	学习去看内核源码：
+		1）得到内核源码（加载慢可以用steam++） www.kernel.org/pub/linux/kernel/
+			下载慢可以用科学上网的方式重新下载
+			先下载到windows上就行
+			在终端输入uname -r查看当前OS的Linux内核版本，可以选择一样的版本下载
+			我下载的是4.8的版本：https://mirrors.edge.kernel.org/pub/linux/kernel/v4.x/linux-4.8.tar.gz
+		2）阅读代码前置操作（推荐在root权限下进行后续操作）
+			拷贝到Linux
+				拷贝到用户主目录  /root（我的直接就是root）
+			解压
+				tar -zxvf linux-4.8.tar.gz
+				得到一个目录  linux-4.8
+			配置（设置）
+				主要是为了生成.config，没有的话可能编译的时候会报错
+				cd linux-4.8
+				先下载curses	apt-get install libncurses5-dev
+				然后记得把终端调的大一点，不然也可能会报错
+				make menuconfig
+				上下键是选择内容
+				左右键是选择要执行的操作
+				空格键是进入选择的内容
+				Enter是确定要进行的操作
+				【*】   选中成为内核的一部分
+				【M】   选中成为内核模块
+				【 】   不选中
+				直接选save->ok保存然后exit退出就行
+			编译
+				make  
+				或者
+				make zImage
+				编译时可能会报错
+					cc1: error: code model kernel does not support PIC mode
+					这个可能是当前Linux环境的内核太高了
+					解决：
+						vi ./arch/x86/Makefile
+						按i键进入编辑模式，在
+						2KBUILD_CFLAGS += -mno-red-zone
+        				KBUILD_CFLAGS += -mcmodel=kernel
+						KBUILD_CFLAGS += -fno-pic//加入这一行
+					按Esc返回命令模式，输入:wq 并按Enter保存退出
+
+					fatal error: openssl/opensslv.h
+					没有那个文件或目录
+					解决：apt-get install libssl-dev
+
+					sorry, unimplemented: ‘-mfentry’ isn’t supported for 32-bit in combination with ‘-fpic’
+					解决：
+						在linux-4.8下vi Makefile
+						输入/CC_USING_FENTRY 找到那行
+						按回车进入那行
+						上下文是：
+						ifdef CONFIG_HAVE_FENTRY
+						CC_USING_FENTRY := $(call cc-option, -mfentry -DCC_USING_FENTRY)
+						endif
+						KBUILD_CFLAGS   += $(CC_FLAGS_FTRACE) $(CC_USING_FENTRY)
+						KBUILD_AFLAGS   += $(CC_USING_FENTRY)
+						将CC_USING_FENTRY那行的-mfentry后面加上 -fno-pic
+						改后:CC_USING_FENTRY := $(call cc-option, -mfentry -fno-pic -DCC_USING_FENTRY)
+						按照上面的方式退出
+					
+					make[1]: *** No rule to make target 'debian/canonical-certs.pem', needed by 'certs/x509_certificate_list'.  Stop.
+					解决：
+						http://t.csdnimg.cn/HNpiT
+
+				
+				编译完成后会有提示 生成 文件 linux-4.8/arch/
+			拷贝到windows
+			用sourceInsight打开
+				Project->New Project->名字和路径自定义，但是都不推荐出现中文
+				New Project Setting中
+					configuration选第一个：独立的配置文件
+					中间的Project Source Directory - the main location of your source files栏点Browse选择拷贝来的文件
+					选择 Add Tree的方式添加
+
+			免费密钥：https://blog.csdn.net/dong_007_007/article/details/2688661
+			提示Setup Common Projects时可以直接x掉然后不创建新的工程
+		3）常识：如何制作linux系统并烧录到开发板上
+			3.1 准备
+				开发板
+				编译后的内核文件zImage
+				引导程序
+					boot、uboot、BootLoader
+				文件系统
+					建立目录结构（建文件夹）
+					xbox（提供命令的软件）
+						用mknod命令创建两个设备（文件）
+							空设备 null
+							终端设备 console
+				界面：一般用Qt
+				BootLoader：Linux的启动程序 Windows上是BIOS
+					bootsect.s	汇编程序	从磁盘读出Linux内核并把内核迁移到内存的某个位置
+					setup.s 	内核的部分设置
+					head.s		内核的头，用于初始化驱动并启动内核的主（根）线程
+					main.c		初始化内核各个模块
+		4）Linux特性：
+			1）抢占式多任务处理
+			2）页式内存管理 MMU、PMMU
+			3）虚拟文件系统 VFS
+			4）网络
+			5）动态加载模块
+
+		5）一个Linux命令的执行流程
+
+		5）内核代码编写
+			控制台输入一个命令     ------->   为什么敲键盘有显示
+											中断   				硬件中断 
+											触发控制台设备驱动    回显
+			shell分析输入参数		 ------->   什么叫shell
+											终端的解释程序  提供命令  提供字符串解析
+			调用 fork systemcall
+			生成一个shell的拷贝   ------->    什么叫系统调用
+												system call是内核提供的接口 保护内核
+											 如何实现系统调用
+											 	软件中断   模式切换    aio
+											 fork做什么
+											 	创建子进程  写时拷贝
+											 为什么要用fork
+											 	并发
+			调用exec把ls的可执行文件装入内存
+								 ------->    内存管理机制 
+								 			 进程调用 
+								 			 分页机制
+								 			 文件
+			系统调用返回 			 ------->	 堆栈保护
+											 寄存器保护与恢复
+			shell和ls执行         ------->    进程调度
+											  运行队列
+											  等待队列
+		6） 内核代码编写
+		6.1 环境
+
+			应用程序 代码的运行环境：
+				编译器   库 
+
+			内核代码的运行环境：
+				编译器 就是 内核代码
+				运行环境 同样是 内核代码
+
+		内核代码有两类：
+			一类是当前已经安装好运行的操作系统  虚拟机里的ubuntu
+				/lib/modules/$(uname -r)/build    编译器  相当于  gcc 
+
+
+			一类是已经编译好的内核源码         目录 
+				同样会有一个build文件  无非是 路径不一样
+		6.2 入口
+			应用程序是main为入口 
+			linux内核模块程序 LKM（Linux Kernel Module）
+			有专门的入口函数  结束函数
+
+			入口函数：module_init()
+			结束函数：module_exit()
+
+			参数为函数指针    自己去定义函数
+			入口函数参数类型
+				int __init (*)(void){
+
+				}
+			结束函数参数类型
+				void __exit (*)(void){
+
+				}
+
+			LKM头文件：
+				#include <linux/init.h>
+				#include <linux/module.h>
+
+			用到的函数都是linux内核里的函数，不同版本可能有区别
+
+			语言的标准库函数 操作系统提供的系统调用都没法使用
+
+		6.3 编译和执行
+			编译  注意写makefile来编译
+			KVERS = $(shell uname -r)
+			obj-m+=hello.o
+			build:kernel_modules
+
+			kernel_modules:
+				make -C /lib/modules/$(KVERS)/build M=$(CURDIR) modules
+	
+			clean:
+				make -C /lib/modules/$(KVERS)/build M=$(CURDIR) clean
+
+
+			源文件：*.c
+
+			编译：
+				make 
+			清理：
+				make clean
+
+			生成：
+				*.ko
+
+			运行：
+				加载 ： insmod *.ko   运行  module_init 设置的函数
+				卸载 ： rmmod *.ko    运行  module_exit 设置的函数
+
+			看结果：
+				dmesg     把 日志文件里的内容输出到终端
+				dmesg -c   把 日志文件里的内容输出到终端 并 删除
+
+		为什么叫内核模块：
+			和动态库类似
+
+		静态库：链接的时候就弄到 可执行程序文件中 
+			导致可执行程序文件比较大   相对不灵活 （如果要改库函数 就要重新链接）  执行快
+		动态库：运行的时候 动态加载  可执行程序文件中就只有一个接口
+			导致可执行程序文件比较小   相对灵活（直接改库文件就可以改库函数，不用重新编译链接） 执行慢
+
+
+		先制作操作系统内核 然后操作系统安装到裸机上 然后启动操作系统 。
+		如果要改动操作系统  就要 重装操作系统   非常麻烦。
+
+		所以有了内核模块 制作操作系统的时候  就把某些程序以模块的形式弄到操作系统内核中。然后需要加载某部分内核代码的时候就不用重新安装操作系统。相对灵活很多。
+		做出来的操作系统也会比较小。
+
+		鼠标：  鼠标驱动 系统启动之后 插入鼠标  自动安装鼠标驱动并运行鼠标驱动   usb接口的鼠标
+		圆形接口的鼠标 就不具备这种功能，需要关机 插入鼠标  然后开机 才可以使用。
+
+	如何传递数据到LKM程序中
+		应用程序   是  命令行参数方式  main函数参数 argc argv 
+
+	module_param 三个参数
+		第一个参数是变量名 
+		第二个参数是变量类型   char*  charp
+		第三个参数是权限       S_IRUGO
+
+	加载的时候 传递数据给参数
+		insmod param.ko name='名字' num=114514
+
+		name 和num 是module_param函数设置过的变量名
+
+
+

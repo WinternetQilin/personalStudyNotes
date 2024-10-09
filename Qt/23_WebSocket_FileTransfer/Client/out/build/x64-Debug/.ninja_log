@@ -1,0 +1,9 @@
+# ninja log v5
+25	208	7309079265713273	23_WebSocket_FileTransfer_autogen/timestamp	789c9bc101afd66
+964	12000	7308973425761326	CMakeFiles/23_WebSocket_FileTransfer.dir/23_WebSocket_FileTransfer_autogen/mocs_compilation.cpp.obj	42e26804514118fe
+25	208	7309079265713273	23_WebSocket_FileTransfer_autogen/mocs_compilation.cpp	789c9bc101afd66
+25	208	7309079265713273	C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/23_WebSocket_FileTransfer/out/build/x64-Debug/23_WebSocket_FileTransfer_autogen/timestamp	789c9bc101afd66
+6695	7061	7309079333573030	23_WebSocket_FileTransfer.exe	4ded22153ada52a0
+25	208	7309079265713273	C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/23_WebSocket_FileTransfer/out/build/x64-Debug/23_WebSocket_FileTransfer_autogen/mocs_compilation.cpp	789c9bc101afd66
+971	12025	7308973426141096	CMakeFiles/23_WebSocket_FileTransfer.dir/main.cpp.obj	2e968d1a90f749bf
+226	6694	7309079330503437	CMakeFiles/23_WebSocket_FileTransfer.dir/RemoteFileDlg.cpp.obj	f892d18448cee3cb

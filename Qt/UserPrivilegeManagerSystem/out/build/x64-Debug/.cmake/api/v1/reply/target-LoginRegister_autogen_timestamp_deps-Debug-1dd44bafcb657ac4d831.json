@@ -1,0 +1,67 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UPM-Client/LoginRegister/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Util::@985804b4fac11ee930c3"
+		},
+		{
+			"id" : "SWidget::@86a84c088d51183ca202"
+		}
+	],
+	"id" : "LoginRegister_autogen_timestamp_deps::@76541a721609a568cd37",
+	"isGeneratorProvided" : true,
+	"name" : "LoginRegister_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "UPM-Client/LoginRegister",
+		"source" : "UPM-Client/LoginRegister"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UPM-Client/LoginRegister/CMakeFiles/LoginRegister_autogen_timestamp_deps",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Debug/UPM-Client/LoginRegister/CMakeFiles/LoginRegister_autogen_timestamp_deps.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

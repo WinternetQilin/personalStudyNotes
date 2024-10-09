@@ -1,0 +1,12 @@
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/CMakeFiles/edit_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/CMakeFiles/rebuild_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/CMakeFiles/Util.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/CMakeFiles/edit_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/CMakeFiles/rebuild_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/CMakeFiles/Util_autogen_timestamp_deps.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/CMakeFiles/Util_autogen.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/CMakeFiles/UPM-Server.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/CMakeFiles/edit_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/CMakeFiles/rebuild_cache.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/CMakeFiles/UPM-Server_autogen_timestamp_deps.dir
+C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/CMakeFiles/UPM-Server_autogen.dir

@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Util",
+					"jsonFile" : "directory-Util-RelWithDebInfo-0886e87680ba47df368e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Util",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "UPM-Server",
+					"jsonFile" : "directory-UPM-Server-RelWithDebInfo-3f1ccdf4b0075d24c949.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "UPM-Server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UserPrivilegeManagerSystem"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Util",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "UPM-Server",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "UPM-Server::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server-RelWithDebInfo-acfc095b3be77d1c0a5e.json",
+					"name" : "UPM-Server",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "UPM-Server_autogen::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server_autogen-RelWithDebInfo-2a49a05ec9a4c3e57f43.json",
+					"name" : "UPM-Server_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "UPM-Server_autogen_timestamp_deps::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server_autogen_timestamp_deps-RelWithDebInfo-ec8bd9a83e79cdbe8b7b.json",
+					"name" : "UPM-Server_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util-RelWithDebInfo-5b5fbb69b4094270853c.json",
+					"name" : "Util",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util_autogen::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util_autogen-RelWithDebInfo-6e0dfe3953e61123f4de.json",
+					"name" : "Util_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util_autogen_timestamp_deps::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util_autogen_timestamp_deps-RelWithDebInfo-48f7e16e913b7004eba7.json",
+					"name" : "Util_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release",
+		"source" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

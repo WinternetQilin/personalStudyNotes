@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/audioAndVideo.dir/embed.manifest"

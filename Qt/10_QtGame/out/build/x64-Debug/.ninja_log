@@ -1,0 +1,16 @@
+# ninja log v5
+12	310	7421107593991349	10_QtGame_autogen/timestamp	bd0d6152ff36a78c
+607	2605	7421107617485854	CMakeFiles/10_QtGame.dir/Sprite.cpp.obj	f3a3b8b705e1be60
+12	310	7421107593991349	10_QtGame_autogen/mocs_compilation.cpp	bd0d6152ff36a78c
+311	591	7421107597297908	10_QtGame_autogen/EWIEGA46WW/qrc_Resource.cpp	4695641cbbbc495d
+12	310	7421107593991349	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/10_QtGame/out/build/x64-Debug/10_QtGame_autogen/timestamp	bd0d6152ff36a78c
+611	2694	7421107618362733	CMakeFiles/10_QtGame.dir/PlayerPlane.cpp.obj	caa1e3542044db4f
+12	310	7421107593991349	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/10_QtGame/out/build/x64-Debug/10_QtGame_autogen/mocs_compilation.cpp	bd0d6152ff36a78c
+311	591	7421107597297908	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/10_QtGame/out/build/x64-Debug/10_QtGame_autogen/EWIEGA46WW/qrc_Resource.cpp	4695641cbbbc495d
+624	3498	7421107626277496	CMakeFiles/10_QtGame.dir/10_QtGame_autogen/EWIEGA46WW/qrc_Resource.cpp.obj	36cb23967f6c5c83
+616	3727	7421107628680818	CMakeFiles/10_QtGame.dir/Bullet.cpp.obj	d069e338277b812d
+620	3734	7421107628769073	CMakeFiles/10_QtGame.dir/Map.cpp.obj	609653d5b17e47ff
+596	3757	7421107629002384	CMakeFiles/10_QtGame.dir/main.cpp.obj	c415f2c8e3b1a686
+591	3764	7421107629086615	CMakeFiles/10_QtGame.dir/10_QtGame_autogen/mocs_compilation.cpp.obj	7f50493349dd5072
+602	4008	7421107631513116	CMakeFiles/10_QtGame.dir/QGame.cpp.obj	2b8f8cd308d4a01c
+4008	4418	7421107635421142	10_QtGame.exe	da5fc83e798ca270

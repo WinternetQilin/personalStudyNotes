@@ -1,0 +1,15 @@
+# ninja log v5
+7	106	7392073492313283	Util/Util_autogen/timestamp	6d7e680c5000ee6e
+7	106	7392073492313283	Util/Util_autogen/mocs_compilation.cpp	6d7e680c5000ee6e
+7	106	7392073492313283	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/Util_autogen/timestamp	6d7e680c5000ee6e
+7	106	7392073492313283	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/Util/Util_autogen/mocs_compilation.cpp	6d7e680c5000ee6e
+107	152	7392073493073266	Util/CMakeFiles/Util.dir/Util_autogen/mocs_compilation.cpp.obj	6f73e8d2295a1b6e
+111	1011	7392073501504743	Util/CMakeFiles/Util.dir/SSqlConnectionPool.cpp.obj	53e9641f524acb78
+1013	1064	7392073502156715	Util/Util.lib	8c4aedcbef777950
+1064	1161	7392073502832851	UPM-Server/UPM-Server_autogen/timestamp	24961a88a409a5ab
+1064	1161	7392073502832851	UPM-Server/UPM-Server_autogen/mocs_compilation.cpp	24961a88a409a5ab
+1064	1161	7392073502832851	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/UPM-Server_autogen/timestamp	24961a88a409a5ab
+1064	1161	7392073502832851	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Release/UPM-Server/UPM-Server_autogen/mocs_compilation.cpp	24961a88a409a5ab
+1161	1208	7392073503629700	UPM-Server/CMakeFiles/UPM-Server.dir/UPM-Server_autogen/mocs_compilation.cpp.obj	69b6954aa4e0c5ab
+1165	2234	7392073513838346	UPM-Server/CMakeFiles/UPM-Server.dir/main.cpp.obj	2a3a9137a3b4a351
+2234	2567	7392073517008464	UPM-Server/UPM-Server.exe	e81628d4a529f237

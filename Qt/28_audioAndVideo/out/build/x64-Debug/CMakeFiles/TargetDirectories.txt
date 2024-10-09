@@ -1,0 +1,5 @@
+C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/audioAndVideo.dir
+C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/audioAndVideo_autogen_timestamp_deps.dir
+C:/Users/HUAWEI/Documents/GitHub/C_Hub/Qt/28_audioAndVideo/out/build/x64-Debug/CMakeFiles/audioAndVideo_autogen.dir

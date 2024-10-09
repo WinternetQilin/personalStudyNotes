@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a5d160de15f697b16080.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WordEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "WordEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WordEditor-Debug-1fe724c1697d5a27f124.json",
+					"name" : "WordEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WordEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WordEditor_autogen-Debug-f257ba695c246f05d5fa.json",
+					"name" : "WordEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WordEditor_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WordEditor_autogen_timestamp_deps-Debug-cfdbc6cf3fbe81e4dd0c.json",
+					"name" : "WordEditor_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/WordEditor/build/Desktop_Qt_6_5_2_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/WordEditor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
