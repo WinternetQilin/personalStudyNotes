@@ -1,0 +1,42 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UPM-Client/SubPage/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Util::@985804b4fac11ee930c3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "SWidget::@86a84c088d51183ca202"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "QXlsx::@e81f96ff78754bf7731d"
+		}
+	],
+	"id" : "SubPage_autogen_timestamp_deps::@1d8798899604e48cb8da",
+	"isGeneratorProvided" : true,
+	"name" : "SubPage_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "UPM-Client/SubPage",
+		"source" : "UPM-Client/SubPage"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

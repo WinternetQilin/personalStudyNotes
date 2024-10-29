@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/SWidget/SWidget_autogen/EWIEGA46WW/moc_SNavBar.cpp: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/SWidget/SNavBar.h \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/SWidget/SWidget_autogen/EWIEGA46WW/moc_SNavBar.cpp: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/SWidget/SNavBar.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/qalgorithms.h \

@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"SJwt/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "SJwt_autogen_timestamp_deps::@e178d2d3e4a541e8a410",
+	"isGeneratorProvided" : true,
+	"name" : "SJwt_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "SJwt",
+		"source" : "SJwt"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

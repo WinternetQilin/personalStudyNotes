@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/16_WindeployQt_GUI/out/build/x64-Debug/16_WindeployQt_GUI_autogen/include/main.moc: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/16_WindeployQt_GUI/main.cpp \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/16_WindeployQt_GUI/out/build/x64-Debug/16_WindeployQt_GUI_autogen/include/main.moc: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/16_WindeployQt_GUI/main.cpp \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/qabstractitemmodel.h \
@@ -162,5 +162,5 @@ C:/Users/zmq/Documents/GitHub/C_Hub/Qt/16_WindeployQt_GUI/out/build/x64-Debug/16
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qwidget.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/16_WindeployQt_GUI/QtEnvSearch.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/16_WindeployQt_GUI/WindeployQtUI.h
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/16_WindeployQt_GUI/QtEnvSearch.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/16_WindeployQt_GUI/WindeployQtUI.h

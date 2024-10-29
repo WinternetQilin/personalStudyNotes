@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/EWIEGA46WW/moc_UserManagePage.cpp: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.h \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/EWIEGA46WW/moc_UserManagePage.cpp: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/qabstractitemmodel.h \
@@ -166,5 +166,5 @@ C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtWidgets/qwidget.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h

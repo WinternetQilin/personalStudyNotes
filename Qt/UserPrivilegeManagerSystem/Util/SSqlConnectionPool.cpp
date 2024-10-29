@@ -66,6 +66,7 @@ QSqlDatabase SSqlConnectionPool::openConnection()
 	{
 		m_usedConnections.enqueue(con_name);
 	}
+	qDebug() << m_password;
 	return db;
 
 }
@@ -106,7 +107,7 @@ QSqlDatabase SSqlConnectionPool::createConnection(const QString& con_name)
 		qWarning() << __FUNCTION__ << "  error:  " << db.lastError().text();
 		return QSqlDatabase();
 	}
-
+	qDebug() << m_password;
 	return db;
 
 }

@@ -1,18 +1,18 @@
 Util_autogen/timestamp: \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/FindThreads.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/GNUInstallDirs.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
-	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckIncludeFile.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
@@ -124,14 +124,14 @@ Util_autogen/timestamp: \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
 	C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/CMakeLists.txt \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SConfigFile.cpp \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SConfigFile.h \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SHttpClient.cpp \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SHttpClient.h \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SHttpPartParse.cpp \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SHttpPartParse.h \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SResultCode.h \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SSqlConnectionPool.cpp \
-	C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util/SSqlConnectionPool.h \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/CMakeLists.txt \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SConfigFile.cpp \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SConfigFile.h \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SHttpClient.cpp \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SHttpClient.h \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SHttpPartParse.cpp \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SHttpPartParse.h \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SResultCode.h \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SSqlConnectionPool.cpp \
+	C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util/SSqlConnectionPool.h \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe

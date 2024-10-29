@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/EWIEGA46WW/moc_UserDetailsDlg.cpp: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/EWIEGA46WW/moc_UserDetailsDlg.cpp: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/qalgorithms.h \

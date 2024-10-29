@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/SWidget
+# Install script for directory: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/SWidget
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

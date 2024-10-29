@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UPM-Server/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Util::@985804b4fac11ee930c3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "SJwt::@e178d2d3e4a541e8a410"
+		}
+	],
+	"id" : "UPM-Server_autogen_timestamp_deps::@b50ade010ebacb74e83b",
+	"isGeneratorProvided" : true,
+	"name" : "UPM-Server_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "UPM-Server",
+		"source" : "UPM-Server"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

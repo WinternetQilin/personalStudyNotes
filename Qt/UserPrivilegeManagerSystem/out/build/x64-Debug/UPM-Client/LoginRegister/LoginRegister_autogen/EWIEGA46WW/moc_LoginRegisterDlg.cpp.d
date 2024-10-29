@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/LoginRegister_autogen/EWIEGA46WW/moc_LoginRegisterDlg.cpp: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegisterDlg.h \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/LoginRegister/LoginRegister_autogen/EWIEGA46WW/moc_LoginRegisterDlg.cpp: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/LoginRegister/LoginRegisterDlg.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QFlags \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QList \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QMetaType \

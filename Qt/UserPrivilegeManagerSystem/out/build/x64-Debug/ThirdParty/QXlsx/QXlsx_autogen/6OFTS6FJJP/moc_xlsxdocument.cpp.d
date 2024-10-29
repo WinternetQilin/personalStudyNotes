@@ -1,4 +1,4 @@
-C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/ThirdParty/QXlsx/QXlsx_autogen/6OFTS6FJJP/moc_xlsxdocument.cpp: C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxdocument.h \
+C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/ThirdParty/QXlsx/QXlsx_autogen/6OFTS6FJJP/moc_xlsxdocument.cpp: C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxdocument.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QByteArray \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QDate \
   C:/Qt/6.5.2/msvc2019_64/include/QtCore/QDateTime \
@@ -148,12 +148,12 @@ C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-
   C:/Qt/6.5.2/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.5.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxabstractooxmlfile.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxabstractsheet.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcell.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcelllocation.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcellrange.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcellreference.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxformat.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxglobal.h \
-  C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxworksheet.h
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxabstractooxmlfile.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxabstractsheet.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcell.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcelllocation.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcellrange.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxcellreference.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxformat.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxglobal.h \
+  C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header/xlsxworksheet.h

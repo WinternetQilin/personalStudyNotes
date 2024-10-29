@@ -1,12 +1,13 @@
 {
-	"BUILD_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage",
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage",
 	"CMAKE_EXECUTABLE" : "C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/CMakeLists.txt",
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/CMakeLists.txt",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -16,7 +17,7 @@
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtFeature.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtFeatureCommon.cmake",
-		"C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
@@ -27,36 +28,37 @@
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
-		"C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"C:/Program Files/Microsoft Visual Studio/2022/Preview/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/Qt/6.5.2/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem",
-	"DEP_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "SubPage_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.h",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.h",
 			"MU",
 			"EWIEGA46WW/moc_UserAddDlg.cpp",
 			null
 		],
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.h",
 			"MU",
 			"EWIEGA46WW/moc_UserDetailsDlg.cpp",
 			null
 		],
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.h",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.h",
 			"MU",
 			"EWIEGA46WW/moc_UserManagePage.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/SubPage_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -79,10 +81,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage",
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/Util",
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/SWidget",
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header",
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage",
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/Util",
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/SWidget",
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/ThirdParty/QXlsx/header",
 		"C:/Qt/6.5.2/msvc2019_64/include/QtWidgets",
 		"C:/Qt/6.5.2/msvc2019_64/include",
 		"C:/Qt/6.5.2/msvc2019_64/include/QtCore",
@@ -110,26 +112,26 @@
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/CMakeFiles/SubPage_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/CMakeFiles/SubPage_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.5.2/msvc2019_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.5.2/msvc2019_64/./bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/CMakeFiles/SubPage_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/SubPage/CMakeFiles/SubPage_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.cpp",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserAddDlg.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.cpp",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserDetailsDlg.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.cpp",
+			"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/SubPage/UserManagePage.cpp",
 			"MU",
 			null
 		]
@@ -138,5 +140,6 @@
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0
 }

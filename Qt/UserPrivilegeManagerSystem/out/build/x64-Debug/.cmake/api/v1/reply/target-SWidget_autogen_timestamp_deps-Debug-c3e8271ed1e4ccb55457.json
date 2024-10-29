@@ -1,0 +1,34 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"SWidget/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Util::@985804b4fac11ee930c3"
+		}
+	],
+	"id" : "SWidget_autogen_timestamp_deps::@86a84c088d51183ca202",
+	"isGeneratorProvided" : true,
+	"name" : "SWidget_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "SWidget",
+		"source" : "SWidget"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

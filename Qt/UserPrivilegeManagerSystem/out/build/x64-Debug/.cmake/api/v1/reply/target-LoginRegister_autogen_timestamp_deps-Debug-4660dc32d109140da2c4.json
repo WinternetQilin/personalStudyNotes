@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"UPM-Client/LoginRegister/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Util::@985804b4fac11ee930c3"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "SWidget::@86a84c088d51183ca202"
+		}
+	],
+	"id" : "LoginRegister_autogen_timestamp_deps::@76541a721609a568cd37",
+	"isGeneratorProvided" : true,
+	"name" : "LoginRegister_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "UPM-Client/LoginRegister",
+		"source" : "UPM-Client/LoginRegister"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

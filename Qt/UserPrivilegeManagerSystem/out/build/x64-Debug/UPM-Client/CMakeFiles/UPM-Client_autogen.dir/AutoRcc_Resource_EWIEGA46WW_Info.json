@@ -1,23 +1,25 @@
 {
-	"BUILD_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/UPM-Client_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client",
-	"CMAKE_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem",
+	"BUILD_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/UPM-Client_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client",
+	"CMAKE_SOURCE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem",
+	"CROSS_CONFIG" : false,
 	"GENERATOR" : "Ninja",
-	"INCLUDE_DIR" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/UPM-Client_autogen/include",
+	"INCLUDE_DIR" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/UPM-Client_autogen/include",
 	"INPUTS" : 
 	[
-		"C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/Resource/default_avatar.jpg"
+		"C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/Resource/default_avatar.jpg"
 	],
-	"LOCK_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/CMakeFiles/UPM-Client_autogen.dir/AutoRcc_Resource_EWIEGA46WW_Lock.lock",
+	"LOCK_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/CMakeFiles/UPM-Client_autogen.dir/AutoRcc_Resource_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
-	"OPTIONS" : [ "-name", "Resource" ],
+	"OPTIONS" : [ "--no-zstd", "-name", "Resource" ],
 	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
 	"OUTPUT_NAME" : "qrc_Resource.cpp",
 	"RCC_EXECUTABLE" : "C:/Qt/6.5.2/msvc2019_64/./bin/rcc.exe",
 	"RCC_LIST_OPTIONS" : [ "--list" ],
-	"SETTINGS_FILE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/CMakeFiles/UPM-Client_autogen.dir/AutoRcc_Resource_EWIEGA46WW_Used.txt",
-	"SOURCE" : "C:/Users/zmq/Documents/GitHub/C_Hub/Qt/UserPrivilegeManagerSystem/UPM-Client/Resource.qrc",
+	"SETTINGS_FILE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug/UPM-Client/CMakeFiles/UPM-Client_autogen.dir/AutoRcc_Resource_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/UPM-Client/Resource.qrc",
+	"USE_BETTER_GRAPH" : false,
 	"VERBOSITY" : 0
 }
