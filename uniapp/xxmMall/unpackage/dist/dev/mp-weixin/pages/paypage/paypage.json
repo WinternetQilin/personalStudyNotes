@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "usingComponents": {
+    "uv-notice-bar": "../../uni_modules/uv-notice-bar/components/uv-notice-bar/uv-notice-bar",
+    "delivery-layout": "../../components/delivery-layout/delivery-layout",
+    "goods-list": "../../components/goods-list/goods-list",
+    "car-layout": "../../components/car-layout/car-layout"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "xxm商城",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "custom-top-bar": "../../components/custom-topBar/custom-topBar",
+    "uv-icon": "../../uni_modules/uv-icon/components/uv-icon/uv-icon",
+    "uv-sticky": "../../uni_modules/uv-sticky/components/uv-sticky/uv-sticky",
+    "product-item": "../../components/product-item/product-item",
+    "car-layout": "../../components/car-layout/car-layout"
+  }
+}

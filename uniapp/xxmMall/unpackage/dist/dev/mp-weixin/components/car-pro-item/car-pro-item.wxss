@@ -1,0 +1,76 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.carProItem.data-v-df67b6b5 {
+  padding: 20rpx 0;
+  border-bottom: 1px solid #efefef;
+  position: relative;
+}
+.carProItem .left.data-v-df67b6b5 {
+  width: 500rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.carProItem .left .pic.data-v-df67b6b5 {
+  width: 110rpx;
+  height: 110rpx;
+}
+.carProItem .left .pic .img.data-v-df67b6b5 {
+  width: 100%;
+  height: 100%;
+}
+.carProItem .left .text.data-v-df67b6b5 {
+  flex: 1;
+  padding-left: 20rpx;
+}
+.carProItem .left .text .title.data-v-df67b6b5 {
+  font-size: 28rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.carProItem .left .text .sku.data-v-df67b6b5 {
+  font-size: 22rpx;
+  color: #999;
+  padding: 5rpx 0;
+}
+.carProItem .left .text .price.data-v-df67b6b5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.carProItem .left .text .price .big.data-v-df67b6b5 {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #EC544F;
+}
+.carProItem .left .text .price .small.data-v-df67b6b5 {
+  font-size: 26rpx;
+  color: #a7a7a7;
+}
+.carProItem .right.data-v-df67b6b5 {
+  position: absolute;
+  right: 0;
+  bottom: 20rpx;
+}

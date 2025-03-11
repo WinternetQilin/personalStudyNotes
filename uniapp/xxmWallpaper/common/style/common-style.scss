@@ -1,0 +1,13 @@
+$common-color-green: #28B38A;
+
+view,swiper,swiper-item{box-sizing: border-box;}
+
+.commonPageBg{
+	background: 
+	linear-gradient(to bottom,rgba(0,0,0,0),white 550rpx),
+	linear-gradient(to right,#beecd8,#f4e2d8);
+}
+
+.safe-area-inset-bottom{
+	height: env(safe-area-inset-bottom);
+}

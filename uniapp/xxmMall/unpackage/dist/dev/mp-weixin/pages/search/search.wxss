@@ -1,0 +1,37 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.searchLayout.data-v-c10c040c {
+  padding: 30rpx;
+  padding-bottom: 150rpx;
+}
+.searchLayout .historyList.data-v-c10c040c {
+  margin-top: 30rpx;
+}
+.searchLayout .historyList .item.data-v-c10c040c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  padding: 30rpx 0;
+  color: #333;
+  border-bottom: 1px solid #efefef;
+}
+.carOut.data-v-c10c040c {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

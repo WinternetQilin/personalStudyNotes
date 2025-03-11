@@ -1,0 +1,120 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-6b23c96c {
+  background: #F7F7F7;
+}
+.orderDetail .payment.data-v-6b23c96c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50rpx 30rpx;
+  position: relative;
+}
+.orderDetail .payment .text.data-v-6b23c96c {
+  padding-left: 20rpx;
+  color: #000;
+}
+.orderDetail .payment .text .big.data-v-6b23c96c {
+  font-size: 44rpx;
+  font-weight: bold;
+}
+.orderDetail .payment .text .small.data-v-6b23c96c {
+  font-size: 28rpx;
+  color: #a7a7a7;
+}
+.orderDetail .payment .complete.data-v-6b23c96c {
+  font-size: 32rpx;
+  color: #a7a7a7;
+  font-weight: bold;
+  border: 6rpx solid #a7a7a7;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-20deg);
+  position: absolute;
+  right: 100rpx;
+  top: 80rpx;
+}
+.orderDetail .payment .complete.data-v-6b23c96c::after {
+  display: block;
+  content: "";
+  border: 2rpx solid #a7a7a7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(0.89);
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.orderDetail .info.data-v-6b23c96c {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 30rpx 30rpx 0 0;
+}
+.orderDetail .info .delivery.data-v-6b23c96c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderDetail .info .delivery .btn.data-v-6b23c96c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  height: 60rpx;
+  border-radius: 80rpx;
+  background: #19BE6B;
+  color: #fff;
+}
+.orderDetail .info .delivery .btn text.data-v-6b23c96c {
+  font-size: 34rpx;
+}
+.orderDetail .info .delivery.other .btn.data-v-6b23c96c {
+  background: #FF9100;
+}
+.orderDetail .info .delivery.other .time.data-v-6b23c96c {
+  font-size: 32rpx;
+  color: #576b95;
+}
+.orderDetail .info .viewOut.data-v-6b23c96c {
+  padding: 30rpx 0;
+}
+.orderDetail .info .viewOut .title.data-v-6b23c96c {
+  font-size: 40rpx;
+  padding-bottom: 15rpx;
+}
+.orderDetail .info .viewOut .row.data-v-6b23c96c {
+  font-size: 30rpx;
+  padding: 15rpx 0;
+  color: #676767;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderDetail .goodsList.data-v-6b23c96c {
+  margin-top: 30rpx;
+}

@@ -1,0 +1,51 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"name": {
+			"title": "用户名",
+			"description": "请输入用户名",
+			"bsonType": "string"
+		},
+		"age": {
+			"title": "年龄",
+			"description": "请输入年龄",
+			"bsonType": "int"
+		},
+		"gender": {
+			"title": "性别",
+			"bsonType": "int",
+			"enum": [{
+					"text": "男",
+					"value": 0
+				},
+				{
+					"text": "女",
+					"value": 1
+				},
+				{
+					"text": "保密",
+					"value": 2
+				}
+			],
+			"defaultValue": 2
+		},
+		"createTime": {
+			"title": "创建时间",
+			"bsonType": "timestamp",
+			"forceDefaultValue": {
+				"$env": "now"
+			}
+		}
+	}
+}

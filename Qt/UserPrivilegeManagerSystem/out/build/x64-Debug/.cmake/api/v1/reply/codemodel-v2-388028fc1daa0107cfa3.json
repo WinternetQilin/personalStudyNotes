@@ -1,0 +1,489 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Util",
+					"jsonFile" : "directory-Util-Debug-0886e87680ba47df368e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Util",
+					"targetIndexes" : 
+					[
+						21,
+						22,
+						23
+					]
+				},
+				{
+					"build" : "SWidget",
+					"jsonFile" : "directory-SWidget-Debug-22d32939790c76e323cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "SWidget",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"build" : "SJwt",
+					"jsonFile" : "directory-SJwt-Debug-a0c823f3396d06b80861.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "SJwt",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "ThirdParty/QXlsx",
+					"jsonFile" : "directory-ThirdParty.QXlsx-Debug-eca93c9499dd8766d422.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "ThirdParty/QXlsx",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "UPM-Server",
+					"jsonFile" : "directory-UPM-Server-Debug-3f1ccdf4b0075d24c949.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "UPM-Server",
+					"targetIndexes" : 
+					[
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "UPM-Client",
+					"childIndexes" : 
+					[
+						7,
+						8
+					],
+					"jsonFile" : "directory-UPM-Client-Debug-4a593ff77461b5a5ce6d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "UPM-Client",
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "UPM-Client/LoginRegister",
+					"jsonFile" : "directory-UPM-Client.LoginRegister-Debug-ec356f0b2e0e577d7429.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 7,
+					"source" : "UPM-Client/LoginRegister",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "UPM-Client/SubPage",
+					"jsonFile" : "directory-UPM-Client.SubPage-Debug-36d295c335f76cf185fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 8,
+					"source" : "UPM-Client/SubPage",
+					"targetIndexes" : 
+					[
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UserPrivilegeManagerSystem"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Util",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						21,
+						22,
+						23
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "SWidget",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "SJwt",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "QXlsx",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "UPM-Server",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						7,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "UPM-Client",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "LoginRegister",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "SubPage",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 7,
+					"id" : "LoginRegister::@76541a721609a568cd37",
+					"jsonFile" : "target-LoginRegister-Debug-df1a5e46fe1a1d9cbea3.json",
+					"name" : "LoginRegister",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "LoginRegister_autogen::@76541a721609a568cd37",
+					"jsonFile" : "target-LoginRegister_autogen-Debug-50af56bcfa84b839f0b1.json",
+					"name" : "LoginRegister_autogen",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "LoginRegister_autogen_timestamp_deps::@76541a721609a568cd37",
+					"jsonFile" : "target-LoginRegister_autogen_timestamp_deps-Debug-4660dc32d109140da2c4.json",
+					"name" : "LoginRegister_autogen_timestamp_deps",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "QXlsx::@e81f96ff78754bf7731d",
+					"jsonFile" : "target-QXlsx-Debug-11f95a294697fd706fb2.json",
+					"name" : "QXlsx",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "QXlsx_autogen::@e81f96ff78754bf7731d",
+					"jsonFile" : "target-QXlsx_autogen-Debug-5d4ea83a1bed834c776c.json",
+					"name" : "QXlsx_autogen",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "QXlsx_autogen_timestamp_deps::@e81f96ff78754bf7731d",
+					"jsonFile" : "target-QXlsx_autogen_timestamp_deps-Debug-f18831f356708226b5fe.json",
+					"name" : "QXlsx_autogen_timestamp_deps",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SJwt::@e178d2d3e4a541e8a410",
+					"jsonFile" : "target-SJwt-Debug-1bb14fe3814148bf4261.json",
+					"name" : "SJwt",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SJwt_autogen::@e178d2d3e4a541e8a410",
+					"jsonFile" : "target-SJwt_autogen-Debug-e01f099d84cf6a040a4d.json",
+					"name" : "SJwt_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "SJwt_autogen_timestamp_deps::@e178d2d3e4a541e8a410",
+					"jsonFile" : "target-SJwt_autogen_timestamp_deps-Debug-d2df1db2341a9a1a6b48.json",
+					"name" : "SJwt_autogen_timestamp_deps",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SWidget::@86a84c088d51183ca202",
+					"jsonFile" : "target-SWidget-Debug-91376fb5f9ca5e58e21c.json",
+					"name" : "SWidget",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SWidget_autogen::@86a84c088d51183ca202",
+					"jsonFile" : "target-SWidget_autogen-Debug-cd0d5aaece50a850460c.json",
+					"name" : "SWidget_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SWidget_autogen_timestamp_deps::@86a84c088d51183ca202",
+					"jsonFile" : "target-SWidget_autogen_timestamp_deps-Debug-c3e8271ed1e4ccb55457.json",
+					"name" : "SWidget_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "SubPage::@1d8798899604e48cb8da",
+					"jsonFile" : "target-SubPage-Debug-5457f200f3a4303f8636.json",
+					"name" : "SubPage",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "SubPage_autogen::@1d8798899604e48cb8da",
+					"jsonFile" : "target-SubPage_autogen-Debug-8de38d91911e191b1368.json",
+					"name" : "SubPage_autogen",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "SubPage_autogen_timestamp_deps::@1d8798899604e48cb8da",
+					"jsonFile" : "target-SubPage_autogen_timestamp_deps-Debug-f421df3e17fafa709d7f.json",
+					"name" : "SubPage_autogen_timestamp_deps",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "UPM-Client::@10ace9bc63d1bcf0f691",
+					"jsonFile" : "target-UPM-Client-Debug-8f5f9c7f67caaf95a055.json",
+					"name" : "UPM-Client",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "UPM-Client_autogen::@10ace9bc63d1bcf0f691",
+					"jsonFile" : "target-UPM-Client_autogen-Debug-f58b85d7e8f125252fa9.json",
+					"name" : "UPM-Client_autogen",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "UPM-Client_autogen_timestamp_deps::@10ace9bc63d1bcf0f691",
+					"jsonFile" : "target-UPM-Client_autogen_timestamp_deps-Debug-ec183af1a0d1f2e407e4.json",
+					"name" : "UPM-Client_autogen_timestamp_deps",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "UPM-Server::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server-Debug-eed3c11df9059c846a3f.json",
+					"name" : "UPM-Server",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "UPM-Server_autogen::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server_autogen-Debug-556f179ae346a146acd8.json",
+					"name" : "UPM-Server_autogen",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "UPM-Server_autogen_timestamp_deps::@b50ade010ebacb74e83b",
+					"jsonFile" : "target-UPM-Server_autogen_timestamp_deps-Debug-0ebde67dc6cd52c8128f.json",
+					"name" : "UPM-Server_autogen_timestamp_deps",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util-Debug-3f71173a0284dd79a4ea.json",
+					"name" : "Util",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util_autogen::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util_autogen-Debug-4b718beee20d4b96e999.json",
+					"name" : "Util_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Util_autogen_timestamp_deps::@985804b4fac11ee930c3",
+					"jsonFile" : "target-Util_autogen_timestamp_deps-Debug-71c9399d4d1d5b595431.json",
+					"name" : "Util_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem/out/build/x64-Debug",
+		"source" : "C:/Users/zmq/Documents/GitHub/personalStudyNotes/Qt/UserPrivilegeManagerSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

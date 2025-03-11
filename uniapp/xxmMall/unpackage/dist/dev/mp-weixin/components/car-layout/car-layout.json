@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uv-overlay": "../../uni_modules/uv-overlay/components/uv-overlay/uv-overlay",
+    "car-pro-item": "../car-pro-item/car-pro-item",
+    "uv-icon": "../../uni_modules/uv-icon/components/uv-icon/uv-icon"
+  }
+}

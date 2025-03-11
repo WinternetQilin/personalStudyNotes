@@ -1,0 +1,53 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-90a3874e {
+  background: #F7F7F7;
+}
+.selfAddress.data-v-90a3874e {
+  padding: 30rpx;
+}
+.selfAddress .headTop.data-v-90a3874e {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.selfAddress .headTop .addressBtn.data-v-90a3874e {
+  border: 1px solid #000;
+  border-radius: 50rpx;
+  padding: 6rpx 15rpx;
+}
+.selfAddress .list.data-v-90a3874e {
+  padding-top: 30rpx;
+}
+.selfAddress .list .item.data-v-90a3874e {
+  background: #fff;
+  padding: 40rpx 20rpx;
+  margin-bottom: 30rpx;
+  border-radius: 15rpx;
+}
+.selfAddress .list .item .head.data-v-90a3874e {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.selfAddress .list .item .more.data-v-90a3874e {
+  font-size: 28rpx;
+  color: #a7a7a7;
+  padding-top: 10rpx;
+}

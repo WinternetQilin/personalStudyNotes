@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "详情页",
+  "usingComponents": {
+    "uni-dateformat": "../../uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat",
+    "uv-parse": "../../uni_modules/uv-parse/components/uv-parse/uv-parse"
+  }
+}

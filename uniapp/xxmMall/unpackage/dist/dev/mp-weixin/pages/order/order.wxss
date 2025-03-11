@@ -1,0 +1,86 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-93207a4f {
+  background: #F7F7F7;
+}
+.orderPage.data-v-93207a4f {
+  padding: 30rpx;
+}
+.orderPage .row.data-v-93207a4f {
+  background: #fff;
+  padding: 40rpx 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.orderPage .row .head.data-v-93207a4f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+}
+.orderPage .row .head .number.data-v-93207a4f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.orderPage .row .head .number .way.data-v-93207a4f {
+  background: #19be6b;
+  color: #fff;
+  font-size: 22rpx;
+  padding: 6rpx 20rpx;
+  border-radius: 30rpx;
+  margin-left: 10rpx;
+}
+.orderPage .row .head .number .way.self.data-v-93207a4f {
+  background: #FF9100;
+}
+.orderPage .row .head .state.data-v-93207a4f {
+  color: #576b95;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.orderPage .row .head .state .err.data-v-93207a4f {
+  color: #F56C6C;
+}
+.orderPage .row .body.data-v-93207a4f {
+  border: 1px solid #ccc;
+  padding: 60rpx 20rpx;
+  border-radius: 10rpx;
+  background: #F9F9F9;
+  font-size: 34rpx;
+  margin: 30px 0;
+}
+.orderPage .row .footer.data-v-93207a4f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #a5a5a5;
+}
+.orderPage .row .footer .price.data-v-93207a4f {
+  font-weight: bold;
+  color: #000;
+}
+.pageNoData.data-v-93207a4f {
+  padding: 10rpx 0 50rpx;
+  text-align: center;
+  color: #666;
+}

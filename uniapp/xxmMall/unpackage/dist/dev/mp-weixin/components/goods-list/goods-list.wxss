@@ -1,0 +1,74 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.goodsLayout .wrapper {
+  background: #fff;
+  padding: 30rpx;
+  margin-bottom: 25rpx;
+  border-radius: 15rpx;
+}
+.goodsLayout .wrapper .title {
+  font-size: 38rpx;
+}
+.goodsLayout .wrapper .list .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rpx 0;
+}
+.goodsLayout .wrapper .list .row .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400rpx;
+}
+.goodsLayout .wrapper .list .row .left .img {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 10rpx;
+}
+.goodsLayout .wrapper .list .row .left .name {
+  padding-left: 15rpx;
+  flex: 1;
+  font-size: 30rpx;
+}
+.goodsLayout .wrapper .list .row .center {
+  width: 100rpx;
+  text-align: center;
+}
+.goodsLayout .wrapper .list .row .right {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+}
+.goodsLayout .wrapper .list .row .right .big {
+  font-size: 34rpx;
+}
+.goodsLayout .wrapper .list .row .right .small {
+  font-size: 22rpx;
+  color: #a7a7a7;
+  text-decoration: line-through;
+}
+.goodsLayout .wrapper .total {
+  padding: 30rpx 0;
+  text-align: right;
+  font-size: 30rpx;
+  color: #a7a7a7;
+}
+.goodsLayout .wrapper .total .big {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+}

@@ -1,0 +1,126 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+view.data-v-1cf27b2a, swiper.data-v-1cf27b2a, swiper-item.data-v-1cf27b2a {
+  box-sizing: border-box;
+}
+.commonPageBg.data-v-1cf27b2a {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), white 550rpx), linear-gradient(to right, #beecd8, #f4e2d8);
+}
+.safe-area-inset-bottom.data-v-1cf27b2a {
+  height: env(safe-area-inset-bottom);
+}
+
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container .customNavBar.data-v-1cf27b2a  .navBar {
+  padding-left: 30rpx;
+}
+.container .banner swiper swiper-item.data-v-1cf27b2a {
+  padding: 0 30rpx;
+  width: 690rpx;
+  height: 340rpx;
+}
+.container .banner swiper swiper-item image.data-v-1cf27b2a {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.container .notice.data-v-1cf27b2a {
+  display: flex;
+  background-color: #F9F9F9;
+  width: 690rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 45rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.container .notice .left.data-v-1cf27b2a {
+  display: flex;
+  justify-content: center;
+  width: 140rpx;
+}
+.container .notice .left text.data-v-1cf27b2a {
+  font-size: 25rpx;
+  color: #28B38A;
+}
+.container .notice .center.data-v-1cf27b2a {
+  flex: 1;
+}
+.container .notice .center swiper.data-v-1cf27b2a {
+  height: 100%;
+  color: #585858;
+}
+.container .notice .center swiper swiper-item.data-v-1cf27b2a {
+  height: 100%;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .notice .right.data-v-1cf27b2a {
+  width: 70rpx;
+  text-align: center;
+}
+.container .recommend.data-v-1cf27b2a {
+  margin-top: 60rpx;
+}
+.container .recommend view.data-v-1cf27b2a  .uni-icons {
+  color: #28B38A !important;
+}
+.container .recommend view.data-v-1cf27b2a  .date {
+  color: #28B38A;
+}
+.container .recommend .content.data-v-1cf27b2a {
+  width: 720rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.container .recommend .content scroll-view.data-v-1cf27b2a {
+  white-space: nowrap;
+}
+.container .recommend .content scroll-view view.data-v-1cf27b2a {
+  display: inline-block;
+  margin-right: 20rpx;
+}
+.container .recommend .content scroll-view view image.data-v-1cf27b2a {
+  width: 200rpx;
+  height: 440rpx;
+  border-radius: 15rpx;
+}
+.container .recommend .content scroll-view view.data-v-1cf27b2a:last-child {
+  margin-right: 30rpx;
+}
+.container .classify.data-v-1cf27b2a {
+  margin-top: 60rpx;
+  padding-bottom: 50rpx;
+}
+.container .classify .content.data-v-1cf27b2a {
+  margin-top: 30rpx;
+  display: grid;
+  gap: 13rpx;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}

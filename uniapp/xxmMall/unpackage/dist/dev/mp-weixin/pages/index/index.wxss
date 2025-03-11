@@ -1,0 +1,108 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.home.data-v-1cf27b2a {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.home .wrapper.data-v-1cf27b2a {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  margin-top: -10px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.home .wrapper .infoModel.data-v-1cf27b2a {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background: #fff;
+  padding: 0 30rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid #ccc;
+}
+.home .wrapper .infoModel .right.data-v-1cf27b2a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #576b95;
+}
+.home .wrapper .scrollLayout.data-v-1cf27b2a {
+  height: calc(100% - 100rpx);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .wrapper .scrollLayout .leftScroll.data-v-1cf27b2a {
+  height: 100%;
+  width: 190rpx;
+  border-right: 1rpx solid #ccc;
+  background: #F7F7F7;
+}
+.home .wrapper .scrollLayout .leftScroll .navItem.data-v-1cf27b2a {
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+  color: #676767;
+  position: relative;
+}
+.home .wrapper .scrollLayout .leftScroll .navItem.active.data-v-1cf27b2a {
+  color: #000;
+  background: #fff;
+}
+.home .wrapper .scrollLayout .leftScroll .navItem.active.data-v-1cf27b2a::after {
+  content: "";
+  width: 6rpx;
+  height: 30rpx;
+  background: #EC544F;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .wrapper .scrollLayout .rightScroll.data-v-1cf27b2a {
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+.home .wrapper .scrollLayout .rightScroll .searchView.data-v-1cf27b2a {
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  color: #576b95;
+}
+.home .wrapper .scrollLayout .rightScroll .productView.data-v-1cf27b2a {
+  padding: 0 30rpx;
+}
+.home .wrapper .scrollLayout .rightScroll .productView .proTitle.data-v-1cf27b2a {
+  line-height: 90rpx;
+  font-size: 30rpx;
+  background: #fff;
+}
+.home .wrapper .scrollLayout .sContent.data-v-1cf27b2a {
+  height: 100%;
+}

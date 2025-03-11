@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "uv-tabs": "../../uni_modules/uv-tabs/components/uv-tabs/uv-tabs",
+    "uv-skeletons": "../../uni_modules/uv-skeletons/components/uv-skeletons/uv-skeletons",
+    "blog-item": "../../components/blog-item/blog-item"
+  }
+}

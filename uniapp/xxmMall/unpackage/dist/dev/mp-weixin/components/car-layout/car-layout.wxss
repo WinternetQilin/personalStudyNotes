@@ -1,0 +1,110 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.carLayout.data-v-80290310 {
+  position: relative;
+  z-index: 10;
+}
+.carLayout .goods.data-v-80290310 {
+  border-bottom: 1px solid #efefef;
+  padding: 30rpx 30rpx 0;
+  border-radius: 20rpx 20rpx 0 0;
+  background: #fff;
+}
+.carLayout .goods .head.data-v-80290310 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a7a7a7;
+  padding: 25rpx 0;
+}
+.carLayout .goods .head .empty.data-v-80290310 {
+  color: #576b95;
+}
+.carLayout .goods .body.data-v-80290310 {
+  height: 550rpx;
+}
+.carLayout .content.data-v-80290310 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 140rpx;
+  background: #fff;
+}
+.carLayout .content .left.data-v-80290310 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carLayout .content .left .icon.data-v-80290310 {
+  width: 80rpx;
+  height: 80rpx;
+  background: #EEEFEE;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 30rpx;
+}
+.carLayout .content .left .icon .num.data-v-80290310 {
+  width: 36rpx;
+  height: 36rpx;
+  background: #EC544F;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  right: -18rpx;
+  top: -18rpx;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.carLayout .content .left .iconhover.data-v-80290310 {
+  transform: scale(0.9);
+}
+.carLayout .content .left .price.data-v-80290310 {
+  font-size: 28rpx;
+}
+.carLayout .content .left .price .text.data-v-80290310 {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.carLayout .content .right .btn.data-v-80290310 {
+  width: 210rpx;
+  height: 75rpx;
+  background: #EC544F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.carLayout .content .right .btn.disable.data-v-80290310 {
+  opacity: 0.6;
+}
+.carLayout .safe-area-bottom.data-v-80290310 {
+  width: 100%;
+  height: env(safe-area-inset-bottom);
+  background-color: #fff;
+}

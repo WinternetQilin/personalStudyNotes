@@ -1,0 +1,7 @@
+{
+  "name": "forumObj",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

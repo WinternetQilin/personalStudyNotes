@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "编辑地址",
+  "usingComponents": {
+    "uv-input": "../../uni_modules/uv-input/components/uv-input/uv-input",
+    "uv-form-item": "../../uni_modules/uv-form/components/uv-form-item/uv-form-item",
+    "uv-switch": "../../uni_modules/uv-switch/components/uv-switch/uv-switch",
+    "uv-button": "../../uni_modules/uv-button/components/uv-button/uv-button",
+    "uv-form": "../../uni_modules/uv-form/components/uv-form/uv-form"
+  }
+}

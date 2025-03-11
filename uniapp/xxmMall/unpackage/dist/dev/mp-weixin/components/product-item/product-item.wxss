@@ -1,0 +1,85 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.pro-item.data-v-aff2f6d2 {
+  width: 100%;
+  padding: 25rpx 0;
+  display: flex;
+}
+.pro-item .pic.data-v-aff2f6d2 {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.pro-item .pic .img.data-v-aff2f6d2 {
+  width: 100%;
+  height: 100%;
+}
+.pro-item .text.data-v-aff2f6d2 {
+  flex: 1;
+  padding-left: 20rpx;
+  position: relative;
+}
+.pro-item .text .title.data-v-aff2f6d2 {
+  font-size: 34rpx;
+  font-weight: bold;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.pro-item .text .price.data-v-aff2f6d2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-weight: bold;
+  padding: 20rpx 0;
+}
+.pro-item .text .price .big.data-v-aff2f6d2 {
+  font-size: 34rpx;
+  color: #EC544F;
+}
+.pro-item .text .price .small.data-v-aff2f6d2 {
+  font-size: 26rpx;
+  opacity: 0.4;
+  text-decoration: line-through;
+  padding-left: 10rpx;
+}
+.pro-item .text .discount.data-v-aff2f6d2 {
+  font-size: 22rpx;
+  color: #EC544F;
+  padding: 3rpx 8rpx;
+  border: 1rpx solid #EC544F;
+  display: inline-block;
+  border-radius: 6rpx;
+}
+.pro-item .text .numbox.data-v-aff2f6d2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pro-item .text .numbox .skuSelect.data-v-aff2f6d2 {
+  height: 40rpx;
+  padding: 0 10rpx;
+  background: #EC544F;
+  font-size: 28rpx;
+  color: #fff;
+}

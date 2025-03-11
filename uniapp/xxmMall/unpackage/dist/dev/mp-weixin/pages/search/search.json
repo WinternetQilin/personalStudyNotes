@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "搜索",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "uv-search": "../../uni_modules/uv-search/components/uv-search/uv-search",
+    "uv-icon": "../../uni_modules/uv-icon/components/uv-icon/uv-icon",
+    "product-item": "../../components/product-item/product-item",
+    "uv-empty": "../../uni_modules/uv-empty/components/uv-empty/uv-empty",
+    "car-layout": "../../components/car-layout/car-layout"
+  }
+}

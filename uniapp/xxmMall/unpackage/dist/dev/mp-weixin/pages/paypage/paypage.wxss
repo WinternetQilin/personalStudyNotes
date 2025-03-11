@@ -1,0 +1,61 @@
+/**
+ * 自定义颜色
+ */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-5c01ce25 {
+  background: #F7F7F7;
+}
+.paypage.data-v-5c01ce25 {
+  padding: 30rpx;
+}
+.paypage .goodsList.data-v-5c01ce25 {
+  margin-top: 30rpx;
+}
+.paypage .paytype.data-v-5c01ce25 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.paypage .paytype .box.data-v-5c01ce25 {
+  width: 49%;
+  height: 75rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  filter: grayscale(100%);
+}
+.paypage .paytype .box .font.data-v-5c01ce25 {
+  padding-left: 10rpx;
+}
+.paypage .paytype .box:first-child.active.data-v-5c01ce25 {
+  border-color: #1578FF;
+  color: #1578FF;
+  filter: grayscale(0%);
+}
+.paypage .paytype .box:last-child.active.data-v-5c01ce25 {
+  border-color: #04C15F;
+  color: #04C15F;
+  filter: grayscale(0%);
+}
+.paypage .payTabbar.data-v-5c01ce25 {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
